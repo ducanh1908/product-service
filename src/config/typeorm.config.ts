@@ -9,7 +9,7 @@ export const typeOrmAsyncConfig: TypeOrmModuleAsyncOptions = {
   inject: [ConfigService],
   useFactory: async (): Promise<TypeOrmModuleOptions> => {
     return {
-      type: 'mysql',
+      type: 'mssql',
       host: process.env.DB_HOST,
       port: parseInt(process.env.DB_PORT, 10),
       username: process.env.DB_USERNAME,

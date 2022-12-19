@@ -10,9 +10,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { typeOrmAsyncConfig } from './config/typeorm.config';
 import { QuizModule } from './modules/quiz/quiz.module';
-import { UserModule } from './modules/user/user.module';
 import { EventEmitterModule } from '@nestjs/event-emitter';
-import { SearchModule } from './modules/search/search.module';
 import { MulterModule } from '@nestjs/platform-express';
 
 @Module({
@@ -23,8 +21,6 @@ import { MulterModule } from '@nestjs/platform-express';
     EventEmitterModule.forRoot(),
     MulterModule.register({ dest: './uploads' }),
     QuizModule,
-    UserModule,
-    SearchModule,
   ],
   controllers: [AppController],
   providers: [AppService]

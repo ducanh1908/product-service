@@ -1,8 +1,8 @@
 import { Controller, Post } from '@nestjs/common';
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import { ApiTags } from '@nestjs/swagger';
-import { events } from '../../../common/constants/event.constants';
-import { ResponseAddEvent } from '../events/response-add.event';
+import { events } from '../../common/constants/event.constants';
+import { ResponseAddEvent } from './response-add.event';
 
 @Controller('/response')
 @ApiTags('Response')

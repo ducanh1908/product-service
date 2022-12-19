@@ -6,12 +6,12 @@ import {
   paginate,
   Pagination,
 } from 'nestjs-typeorm-paginate';
-import { events } from '../../../common/constants/event.constants';
+import { events } from '../../common/constants/event.constants';
 
-import { CreateQuizDto } from '../dto/create-quiz.dto';
-import { Quiz } from '../entities/quiz.entity';
-import { ResponseAddEvent } from '../events/response-add.event';
-import { QuizRepository } from '../repositories/quiz.repository';
+import { CreateQuizDto } from './dto/create-quiz.dto';
+import { Quiz } from './entities/quiz.entity';
+import { ResponseAddEvent } from './response-add.event';
+import { QuizRepository } from './quiz.repository';
 
 @Injectable()
 export class QuizService {
